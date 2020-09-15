@@ -1,0 +1,7 @@
+7 20 2
+Ship1 0 3 export
+Ship2 0 2 export
+Ship3 0 2 export
+Ship4 3 3 import
+Ship5 2 2 import
+Ship6 2 2 import
