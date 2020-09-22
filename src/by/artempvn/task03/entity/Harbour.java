@@ -4,9 +4,15 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 import java.util.Optional;
+import org.apache.logging.log4j.Level;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import by.artempvn.task03.creator.HarbourDataCreator;
 
 public class Harbour {
+	private static final int DEFAULT_BERTH_VALUE = 3;
+	private static final int DEFAULT_CAPACITY_VALUE = 20;
+	private static final int DEFAULT_CARGO_VALUE = 5;
 	private static final String DEFAULT_PASS = "input/data.txt";
 	private static Harbour instance = new Harbour();
 	private int currentCargo;
@@ -14,6 +20,7 @@ public class Harbour {
 	private int currentExportCargo;
 	private int currentImportCargo;
 	private List<Berth> berths = new ArrayList<>();
+	private static final Logger logger = LogManager.getLogger(Harbour.class);
 
 	private Harbour() {
 		HarbourDataCreator creator = new HarbourDataCreator();
@@ -24,10 +31,10 @@ public class Harbour {
 			capacity = data.get().getCapacity();
 			berthNumber = data.get().getBerthNumber();
 		} else {
-			// log
-			currentCargo = 5;
-			capacity = 20;
-			berthNumber = 3;
+			logger.log(Level.ERROR, "Use default values for harbour");
+			currentCargo = DEFAULT_CARGO_VALUE;
+			capacity = DEFAULT_CAPACITY_VALUE;
+			berthNumber = DEFAULT_BERTH_VALUE;
 		}
 		for (int i = 1; i <= berthNumber; i++) {
 			berths.add(new Berth(i));
@@ -74,7 +81,6 @@ public class Harbour {
 			isUnloadingSuccessful = true;
 		}
 		return isUnloadingSuccessful;
-
 	}
 
 	public boolean loadCargoToShip() {
@@ -90,13 +96,11 @@ public class Harbour {
 	@Override
 	public String toString() {
 		StringBuilder builder = new StringBuilder();
-		builder.append("Harbour [currentCargo=");
-		builder.append(currentCargo);
-		builder.append(", capacity=");
-		builder.append(capacity);
-		builder.append(", berthNumber=");
-		builder.append(berths.size());
-		builder.append("]");
+		builder.append("Harbour [currentCargo=").append(currentCargo)
+				.append(", capacity=").append(capacity)
+				.append(", number of berths=").append(berths.size())
+				.append("]");
 		return builder.toString();
 	}
+
 }
