@@ -1,4 +1,4 @@
-package by.artempvn.task03.state.impl;
+package by.artempvn.task03.entity.state.impl;
 
 import java.util.concurrent.TimeUnit;
 import org.apache.logging.log4j.Level;
@@ -6,8 +6,8 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import by.artempvn.task03.entity.Harbour;
 import by.artempvn.task03.entity.Ship;
+import by.artempvn.task03.entity.state.ShipState;
 import by.artempvn.task03.exception.CustomException;
-import by.artempvn.task03.state.ShipState;
 
 public class InWatersState implements ShipState {
 	private static final int TIME_TO_REACH_HARBOUR = 5;

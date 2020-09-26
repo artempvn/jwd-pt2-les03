@@ -5,9 +5,9 @@ import java.util.concurrent.TimeUnit;
 import org.apache.logging.log4j.Level;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import by.artempvn.task03.entity.state.ShipState;
+import by.artempvn.task03.entity.state.impl.InWatersState;
 import by.artempvn.task03.exception.CustomException;
-import by.artempvn.task03.state.ShipState;
-import by.artempvn.task03.state.impl.InWatersState;
 
 public class Ship implements Runnable {
 	private static final int HANDLING_TIME = 5;

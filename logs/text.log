@@ -1,61 +1,60 @@
-2020-09-22 12:19:28 [main] WARN  by.artempvn.task03.reader.DataReader- Can't read file null. Try to use default path
-2020-09-22 12:19:28 [main] INFO  by.artempvn.task03.reader.DataReader- Number of read strings = 7
-2020-09-22 12:19:28 [Thread-0] INFO  by.artempvn.task03.reader.DataReader- Number of read strings = 7
-2020-09-22 12:19:28 [Thread-2] INFO  artempvn.task03.state.impl.InWatersState- Ship Ship3 is heading to harbour
-2020-09-22 12:19:28 [Thread-3] INFO  artempvn.task03.state.impl.InWatersState- Ship Ship4 is heading to harbour
-2020-09-22 12:19:28 [Thread-5] INFO  artempvn.task03.state.impl.InWatersState- Ship Ship6 is heading to harbour
-2020-09-22 12:19:28 [Thread-4] INFO  artempvn.task03.state.impl.InWatersState- Ship Ship5 is heading to harbour
-2020-09-22 12:19:28 [Thread-1] INFO  artempvn.task03.state.impl.InWatersState- Ship Ship2 is heading to harbour
-2020-09-22 12:19:28 [Thread-0] INFO  artempvn.task03.state.impl.InWatersState- Ship Ship1 is heading to harbour
-2020-09-22 12:19:33 [Thread-4] INFO  by.artempvn.task03.service.HarbourService- Ship Ship5 is looking for free berth
-2020-09-22 12:19:33 [Thread-0] INFO  by.artempvn.task03.service.HarbourService- Ship Ship1 is looking for free berth
-2020-09-22 12:19:33 [Thread-0] INFO  by.artempvn.task03.service.HarbourService- Ship Ship1 entered berth №2
-2020-09-22 12:19:33 [Thread-4] INFO  by.artempvn.task03.service.HarbourService- Ship Ship5 entered berth №1
-2020-09-22 12:19:33 [Thread-0] INFO  by.artempvn.task03.service.HarbourService- Ship Ship1 got permission for loading
-2020-09-22 12:19:33 [Thread-4] INFO  by.artempvn.task03.service.HarbourService- Ship Ship5 got permission for unloading
-2020-09-22 12:19:38 [Thread-0] INFO  by.artempvn.task03.service.HarbourService- Ship Ship1 got cargo. Current cargo is 1/3
-2020-09-22 12:19:38 [Thread-4] INFO  by.artempvn.task03.service.HarbourService- Ship Ship5 unloaded cargo. Current cargo is 1/2
-2020-09-22 12:19:38 [Thread-0] INFO  by.artempvn.task03.service.HarbourService- Ship Ship1 got permission for loading
-2020-09-22 12:19:38 [Thread-4] INFO  by.artempvn.task03.service.HarbourService- Ship Ship5 got permission for unloading
-2020-09-22 12:19:43 [Thread-0] INFO  by.artempvn.task03.service.HarbourService- Ship Ship1 got cargo. Current cargo is 2/3
-2020-09-22 12:19:43 [Thread-0] INFO  by.artempvn.task03.service.HarbourService- Ship Ship1 got permission for loading
-2020-09-22 12:19:43 [Thread-4] INFO  by.artempvn.task03.service.HarbourService- Ship Ship5 unloaded cargo. Current cargo is 0/2
-2020-09-22 12:19:43 [Thread-4] INFO  by.artempvn.task03.service.HarbourService- Ship Ship5 unload complete
-2020-09-22 12:19:43 [Thread-4] INFO  by.artempvn.task03.service.HarbourService- Ship Ship5 leaves berth №1
-2020-09-22 12:19:43 [Thread-5] INFO  by.artempvn.task03.service.HarbourService- Ship Ship6 is looking for free berth
-2020-09-22 12:19:43 [Thread-5] INFO  by.artempvn.task03.service.HarbourService- Ship Ship6 entered berth №1
-2020-09-22 12:19:43 [Thread-5] INFO  by.artempvn.task03.service.HarbourService- Ship Ship6 got permission for unloading
-2020-09-22 12:19:48 [Thread-0] INFO  by.artempvn.task03.service.HarbourService- Ship Ship1 got cargo. Current cargo is 3/3
-2020-09-22 12:19:48 [Thread-0] INFO  by.artempvn.task03.service.HarbourService- Ship Ship1 load complete
-2020-09-22 12:19:48 [Thread-0] INFO  by.artempvn.task03.service.HarbourService- Ship Ship1 leaves berth №2
-2020-09-22 12:19:48 [Thread-2] INFO  by.artempvn.task03.service.HarbourService- Ship Ship3 is looking for free berth
-2020-09-22 12:19:48 [Thread-2] INFO  by.artempvn.task03.service.HarbourService- Ship Ship3 entered berth №2
-2020-09-22 12:19:48 [Thread-2] INFO  by.artempvn.task03.service.HarbourService- Ship Ship3 got permission for loading
-2020-09-22 12:19:48 [Thread-5] INFO  by.artempvn.task03.service.HarbourService- Ship Ship6 unloaded cargo. Current cargo is 1/2
-2020-09-22 12:19:48 [Thread-5] INFO  by.artempvn.task03.service.HarbourService- Ship Ship6 got permission for unloading
-2020-09-22 12:19:53 [Thread-2] INFO  by.artempvn.task03.service.HarbourService- Ship Ship3 got cargo. Current cargo is 1/2
-2020-09-22 12:19:53 [Thread-2] INFO  by.artempvn.task03.service.HarbourService- Ship Ship3 got permission for loading
-2020-09-22 12:19:53 [Thread-5] INFO  by.artempvn.task03.service.HarbourService- Ship Ship6 unloaded cargo. Current cargo is 0/2
-2020-09-22 12:19:53 [Thread-5] INFO  by.artempvn.task03.service.HarbourService- Ship Ship6 unload complete
-2020-09-22 12:19:53 [Thread-5] INFO  by.artempvn.task03.service.HarbourService- Ship Ship6 leaves berth №1
-2020-09-22 12:19:53 [Thread-1] INFO  by.artempvn.task03.service.HarbourService- Ship Ship2 is looking for free berth
-2020-09-22 12:19:53 [Thread-1] INFO  by.artempvn.task03.service.HarbourService- Ship Ship2 entered berth №1
-2020-09-22 12:19:53 [Thread-1] INFO  by.artempvn.task03.service.HarbourService- Ship Ship2 got permission for loading
-2020-09-22 12:19:58 [Thread-2] INFO  by.artempvn.task03.service.HarbourService- Ship Ship3 got cargo. Current cargo is 2/2
-2020-09-22 12:19:58 [Thread-2] INFO  by.artempvn.task03.service.HarbourService- Ship Ship3 load complete
-2020-09-22 12:19:58 [Thread-2] INFO  by.artempvn.task03.service.HarbourService- Ship Ship3 leaves berth №2
-2020-09-22 12:19:58 [Thread-3] INFO  by.artempvn.task03.service.HarbourService- Ship Ship4 is looking for free berth
-2020-09-22 12:19:58 [Thread-3] INFO  by.artempvn.task03.service.HarbourService- Ship Ship4 entered berth №2
-2020-09-22 12:19:58 [Thread-3] INFO  by.artempvn.task03.service.HarbourService- Ship Ship4 got permission for unloading
-2020-09-22 12:19:58 [Thread-1] INFO  by.artempvn.task03.service.HarbourService- Ship Ship2 got cargo. Current cargo is 1/2
-2020-09-22 12:19:58 [Thread-1] INFO  by.artempvn.task03.service.HarbourService- Ship Ship2 got permission for loading
-2020-09-22 12:20:03 [Thread-3] INFO  by.artempvn.task03.service.HarbourService- Ship Ship4 unloaded cargo. Current cargo is 2/3
-2020-09-22 12:20:03 [Thread-3] INFO  by.artempvn.task03.service.HarbourService- Ship Ship4 got permission for unloading
-2020-09-22 12:20:03 [Thread-1] INFO  by.artempvn.task03.service.HarbourService- Ship Ship2 got cargo. Current cargo is 2/2
-2020-09-22 12:20:03 [Thread-1] INFO  by.artempvn.task03.service.HarbourService- Ship Ship2 load complete
-2020-09-22 12:20:03 [Thread-1] INFO  by.artempvn.task03.service.HarbourService- Ship Ship2 leaves berth №1
-2020-09-22 12:20:08 [Thread-3] INFO  by.artempvn.task03.service.HarbourService- Ship Ship4 unloaded cargo. Current cargo is 1/3
-2020-09-22 12:20:08 [Thread-3] INFO  by.artempvn.task03.service.HarbourService- Ship Ship4 got permission for unloading
-2020-09-22 12:20:13 [Thread-3] INFO  by.artempvn.task03.service.HarbourService- Ship Ship4 unloaded cargo. Current cargo is 0/3
-2020-09-22 12:20:13 [Thread-3] INFO  by.artempvn.task03.service.HarbourService- Ship Ship4 unload complete
-2020-09-22 12:20:13 [Thread-3] INFO  by.artempvn.task03.service.HarbourService- Ship Ship4 leaves berth №2
+2020-09-26 13:21:37 [main] INFO  by.artempvn.task03.reader.DataReader- Number of read strings = 7
+2020-09-26 13:21:37 [Thread-0] INFO  by.artempvn.task03.reader.DataReader- Number of read strings = 7
+2020-09-26 13:21:37 [Thread-2] INFO  task03.entity.state.impl.InWatersState- Ship Ship3 is heading to harbour
+2020-09-26 13:21:37 [Thread-3] INFO  task03.entity.state.impl.InWatersState- Ship Ship4 is heading to harbour
+2020-09-26 13:21:37 [Thread-0] INFO  task03.entity.state.impl.InWatersState- Ship Ship1 is heading to harbour
+2020-09-26 13:21:37 [Thread-5] INFO  task03.entity.state.impl.InWatersState- Ship Ship6 is heading to harbour
+2020-09-26 13:21:37 [Thread-1] INFO  task03.entity.state.impl.InWatersState- Ship Ship2 is heading to harbour
+2020-09-26 13:21:37 [Thread-4] INFO  task03.entity.state.impl.InWatersState- Ship Ship5 is heading to harbour
+2020-09-26 13:21:42 [Thread-4] INFO  by.artempvn.task03.service.HarbourService- Ship Ship5 is looking for free berth
+2020-09-26 13:21:42 [Thread-2] INFO  by.artempvn.task03.service.HarbourService- Ship Ship3 is looking for free berth
+2020-09-26 13:21:42 [Thread-2] INFO  by.artempvn.task03.service.HarbourService- Ship Ship3 entered berth №2
+2020-09-26 13:21:42 [Thread-4] INFO  by.artempvn.task03.service.HarbourService- Ship Ship5 entered berth №1
+2020-09-26 13:21:42 [Thread-2] INFO  by.artempvn.task03.service.HarbourService- Ship Ship3 got permission for loading
+2020-09-26 13:21:42 [Thread-4] INFO  by.artempvn.task03.service.HarbourService- Ship Ship5 got permission for unloading
+2020-09-26 13:21:47 [Thread-2] INFO  by.artempvn.task03.service.HarbourService- Ship Ship3 got cargo. Current cargo is 1/2
+2020-09-26 13:21:47 [Thread-2] INFO  by.artempvn.task03.service.HarbourService- Ship Ship3 got permission for loading
+2020-09-26 13:21:47 [Thread-4] INFO  by.artempvn.task03.service.HarbourService- Ship Ship5 unloaded cargo. Current cargo is 1/2
+2020-09-26 13:21:47 [Thread-4] INFO  by.artempvn.task03.service.HarbourService- Ship Ship5 got permission for unloading
+2020-09-26 13:21:52 [Thread-4] INFO  by.artempvn.task03.service.HarbourService- Ship Ship5 unloaded cargo. Current cargo is 0/2
+2020-09-26 13:21:52 [Thread-2] INFO  by.artempvn.task03.service.HarbourService- Ship Ship3 got cargo. Current cargo is 2/2
+2020-09-26 13:21:52 [Thread-4] INFO  by.artempvn.task03.service.HarbourService- Ship Ship5 unload complete
+2020-09-26 13:21:52 [Thread-2] INFO  by.artempvn.task03.service.HarbourService- Ship Ship3 load complete
+2020-09-26 13:21:52 [Thread-2] INFO  by.artempvn.task03.service.HarbourService- Ship Ship3 leaves berth №2
+2020-09-26 13:21:52 [Thread-4] INFO  by.artempvn.task03.service.HarbourService- Ship Ship5 leaves berth №1
+2020-09-26 13:21:52 [Thread-5] INFO  by.artempvn.task03.service.HarbourService- Ship Ship6 is looking for free berth
+2020-09-26 13:21:52 [Thread-1] INFO  by.artempvn.task03.service.HarbourService- Ship Ship2 is looking for free berth
+2020-09-26 13:21:52 [Thread-5] INFO  by.artempvn.task03.service.HarbourService- Ship Ship6 entered berth №1
+2020-09-26 13:21:52 [Thread-1] INFO  by.artempvn.task03.service.HarbourService- Ship Ship2 entered berth №2
+2020-09-26 13:21:52 [Thread-5] INFO  by.artempvn.task03.service.HarbourService- Ship Ship6 got permission for unloading
+2020-09-26 13:21:52 [Thread-1] INFO  by.artempvn.task03.service.HarbourService- Ship Ship2 got permission for loading
+2020-09-26 13:21:57 [Thread-5] INFO  by.artempvn.task03.service.HarbourService- Ship Ship6 unloaded cargo. Current cargo is 1/2
+2020-09-26 13:21:57 [Thread-5] INFO  by.artempvn.task03.service.HarbourService- Ship Ship6 got permission for unloading
+2020-09-26 13:21:57 [Thread-1] INFO  by.artempvn.task03.service.HarbourService- Ship Ship2 got cargo. Current cargo is 1/2
+2020-09-26 13:21:57 [Thread-1] INFO  by.artempvn.task03.service.HarbourService- Ship Ship2 got permission for loading
+2020-09-26 13:22:02 [Thread-5] INFO  by.artempvn.task03.service.HarbourService- Ship Ship6 unloaded cargo. Current cargo is 0/2
+2020-09-26 13:22:02 [Thread-1] INFO  by.artempvn.task03.service.HarbourService- Ship Ship2 got cargo. Current cargo is 2/2
+2020-09-26 13:22:02 [Thread-5] INFO  by.artempvn.task03.service.HarbourService- Ship Ship6 unload complete
+2020-09-26 13:22:02 [Thread-1] INFO  by.artempvn.task03.service.HarbourService- Ship Ship2 load complete
+2020-09-26 13:22:02 [Thread-5] INFO  by.artempvn.task03.service.HarbourService- Ship Ship6 leaves berth №1
+2020-09-26 13:22:02 [Thread-1] INFO  by.artempvn.task03.service.HarbourService- Ship Ship2 leaves berth №2
+2020-09-26 13:22:02 [Thread-0] INFO  by.artempvn.task03.service.HarbourService- Ship Ship1 is looking for free berth
+2020-09-26 13:22:02 [Thread-3] INFO  by.artempvn.task03.service.HarbourService- Ship Ship4 is looking for free berth
+2020-09-26 13:22:02 [Thread-0] INFO  by.artempvn.task03.service.HarbourService- Ship Ship1 entered berth №1
+2020-09-26 13:22:02 [Thread-3] INFO  by.artempvn.task03.service.HarbourService- Ship Ship4 entered berth №2
+2020-09-26 13:22:02 [Thread-0] INFO  by.artempvn.task03.service.HarbourService- Ship Ship1 got permission for loading
+2020-09-26 13:22:02 [Thread-3] INFO  by.artempvn.task03.service.HarbourService- Ship Ship4 got permission for unloading
+2020-09-26 13:22:07 [Thread-0] INFO  by.artempvn.task03.service.HarbourService- Ship Ship1 got cargo. Current cargo is 1/3
+2020-09-26 13:22:07 [Thread-0] INFO  by.artempvn.task03.service.HarbourService- Ship Ship1 got permission for loading
+2020-09-26 13:22:07 [Thread-3] INFO  by.artempvn.task03.service.HarbourService- Ship Ship4 unloaded cargo. Current cargo is 2/3
+2020-09-26 13:22:07 [Thread-3] INFO  by.artempvn.task03.service.HarbourService- Ship Ship4 got permission for unloading
+2020-09-26 13:22:12 [Thread-3] INFO  by.artempvn.task03.service.HarbourService- Ship Ship4 unloaded cargo. Current cargo is 1/3
+2020-09-26 13:22:12 [Thread-0] INFO  by.artempvn.task03.service.HarbourService- Ship Ship1 got cargo. Current cargo is 2/3
+2020-09-26 13:22:12 [Thread-0] INFO  by.artempvn.task03.service.HarbourService- Ship Ship1 got permission for loading
+2020-09-26 13:22:12 [Thread-3] INFO  by.artempvn.task03.service.HarbourService- Ship Ship4 got permission for unloading
+2020-09-26 13:22:17 [Thread-0] INFO  by.artempvn.task03.service.HarbourService- Ship Ship1 got cargo. Current cargo is 3/3
+2020-09-26 13:22:17 [Thread-0] INFO  by.artempvn.task03.service.HarbourService- Ship Ship1 load complete
+2020-09-26 13:22:17 [Thread-0] INFO  by.artempvn.task03.service.HarbourService- Ship Ship1 leaves berth №1
+2020-09-26 13:22:17 [Thread-3] INFO  by.artempvn.task03.service.HarbourService- Ship Ship4 unloaded cargo. Current cargo is 0/3
+2020-09-26 13:22:17 [Thread-3] INFO  by.artempvn.task03.service.HarbourService- Ship Ship4 unload complete
+2020-09-26 13:22:17 [Thread-3] INFO  by.artempvn.task03.service.HarbourService- Ship Ship4 leaves berth №2

@@ -17,7 +17,8 @@ import by.artempvn.task03.service.HarbourService;
 public class HarbourServiceImpl implements HarbourService {
 	private static final int WAITING_TIME = 3;
 	private static final HarbourService instance = new HarbourServiceImpl();
-	ReentrantLock lock = new ReentrantLock(true);
+	ReentrantLock enterHarbourLock = new ReentrantLock(true);
+	ReentrantLock handlingChargesLock = new ReentrantLock(true);
 	private final Semaphore semaphore;
 	private static final Logger logger = LogManager
 			.getLogger(HarbourService.class);
@@ -51,14 +52,14 @@ public class HarbourServiceImpl implements HarbourService {
 			do {
 				logger.log(Level.INFO, "Ship " + ship.getName()
 						+ " is looking for free berth");
-				lock.lock();
+				enterHarbourLock.lock();
 				berth = berths.stream().filter(
 						anyBerth -> anyBerth.getShip().equals(Optional.empty()))
 						.findFirst();
 				if (berth.isPresent()) {
 					berth.get().setShip(Optional.of(ship));
 				}
-				lock.unlock();
+				enterHarbourLock.unlock();
 				if (!berth.isPresent()) {
 					TimeUnit.SECONDS.sleep(WAITING_TIME);
 				}
@@ -81,7 +82,7 @@ public class HarbourServiceImpl implements HarbourService {
 			throw new CustomException("Ship doesn't have target harbour");
 		}
 		while (ship.getCurrentCargo() < ship.getCapacity()) {
-			lock.lock();
+			handlingChargesLock.lock();
 			if (isOperationPossible(harbour, ship)) {
 				harbour.incrementCurrentExportCargo();
 				logger.log(Level.INFO, "Ship " + ship.getName()
@@ -89,20 +90,20 @@ public class HarbourServiceImpl implements HarbourService {
 			} else {
 				logger.log(Level.INFO,
 						"There is no more cargo for ship " + ship.getName());
-				lock.unlock();
+				handlingChargesLock.unlock();
 				return;
 			}
-			lock.unlock();
+			handlingChargesLock.unlock();
 			if (harbour.loadCargoToShip()) {
 				if (!ship.loadCargo()) {
 					boolean cargoReturning = false;
-					lock.lock();
+					handlingChargesLock.lock();
 					if (harbour.getCurrentCargo() + harbour
 							.getCurrentImportCargo() < harbour.getCapacity()) {
 						harbour.unloadCargoFromShip();
 						cargoReturning = true;
 					}
-					lock.unlock();
+					handlingChargesLock.unlock();
 					logger.log(Level.WARN, "Ship " + ship.getName()
 							+ "couldn't load cargo. Cargo returning was successful: "
 							+ cargoReturning);
@@ -126,7 +127,7 @@ public class HarbourServiceImpl implements HarbourService {
 			throw new CustomException("Ship doesn't have target harbour");
 		}
 		while (ship.getCurrentCargo() > 0) {
-			lock.lock();
+			handlingChargesLock.lock();
 			if (isOperationPossible(harbour, ship)) {
 				harbour.incrementCurrentImportCargo();
 				logger.log(Level.INFO, "Ship " + ship.getName()
@@ -135,10 +136,10 @@ public class HarbourServiceImpl implements HarbourService {
 				logger.log(Level.INFO,
 						"There is no more space for cargo from ship "
 								+ ship.getName());
-				lock.unlock();
+				handlingChargesLock.unlock();
 				return;
 			}
-			lock.unlock();
+			handlingChargesLock.unlock();
 			if (ship.unloadCargo()) {
 				harbour.unloadCargoFromShip();
 				logger.log(Level.INFO, "Ship " + ship.getName()

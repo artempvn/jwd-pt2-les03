@@ -5,7 +5,7 @@ import java.util.Optional;
 public class Berth {
 
 	private int number;
-	private Optional<Ship> ship=Optional.empty();
+	private Optional<Ship> ship = Optional.empty();
 
 	public Berth(int number) {
 		this.number = number;

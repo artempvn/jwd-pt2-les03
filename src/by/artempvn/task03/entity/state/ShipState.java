@@ -1,4 +1,4 @@
-package by.artempvn.task03.state;
+package by.artempvn.task03.entity.state;
 
 import by.artempvn.task03.entity.Harbour;
 import by.artempvn.task03.entity.Ship;
